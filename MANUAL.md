@@ -1,7 +1,7 @@
 ## Model Training
 - Donwload the dataset (http://perception.inf.um.es/ICS-datasets/), and split into files of ~5000 rows using `split -l 5000 electra.csv split_`. (https://www.geeksforgeeks.org/linux-unix/split-command-in-linux-with-examples/)
 
-The intention is that SnapGAN runs on whichever PLC's data is provided to closely emulate an exact PLC. Feel free to replace the Electra dataset with your own by deleting relevant cells in `ctgan.ipynb`. The dataset format is addresses (integers), and data (integers).
+The intention is that SnapGAN runs on whichever PLC's data is provided to closely emulate an exact PLC. Feel free to replace the Electra dataset with your own by deleting relevant cells in `ctgan.ipynb`. The dataset features should be addresses (integers), and data (integers).
 
 This was done in Google Colaboratory, so the corresponding requirements.txt file contains Google Colaboratory dependencies, and therefore should only be installed if recreating the environment. 
 
