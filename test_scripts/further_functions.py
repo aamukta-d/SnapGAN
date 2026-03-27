@@ -5,9 +5,6 @@ import time
 
 parser = argparse.ArgumentParser(description="Probe a conpot S7 honeypot")
 parser.add_argument("--host", default="127.0.0.1")
-parser.add_argument("--port", type=int, default=102)
-parser.add_argument("--rack", type=int, default=0)
-parser.add_argument("--slot", type=int, default=1)
 args = parser.parse_args()
 
 PASS = "\033[92mPASS\033[0m"
@@ -35,8 +32,8 @@ client = snap7.client.Client()
 
 print("0. Connecting")
 try:
-    client.connect(args.host, args.rack, args.slot, args.port)
-    print(f"  [{PASS}] Connected to {args.host}:{args.port}")
+    client.connect(args.host, 0, 1, 102)
+    print(f"  [{PASS}] Connected to {args.host}:102")
 except Exception as e:
     print(f"  [{FAIL}] Could not connect: {e}")
     exit(1)

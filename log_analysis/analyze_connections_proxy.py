@@ -4,7 +4,7 @@ from collections import Counter
 
 def analyze_log(filepath):
     connection_pattern = re.compile(
-        r"\[\+\] Connection from \('([\d.]+)', (\d+)\)"
+        r"Connection from \(\'([\d.]+)\', (\d+)\)"
     )
 
     total_connections = 0
@@ -32,10 +32,8 @@ def analyze_log(filepath):
         print(f"  {ip:<22} {count:>4} connection(s)")
     print("=" * 50)
 
-
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("Usage: python analyze_connections.py <logfile>")
+        print("Usage: python analyze_connections_proxy.py <logfile>")
         sys.exit(1)
-
     analyze_log(sys.argv[1])
