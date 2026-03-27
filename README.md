@@ -1,2 +1,3 @@
 # SnapGAN
-Level 4 Dissertation Project Repository
+## A Novel Architecture for Realistic Industrial Control System Honeypots
+Aamukta Dahagam's Level 4 Projecy Repository
