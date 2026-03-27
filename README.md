@@ -21,3 +21,5 @@ Python 3.12 or newer.
 
 ## Quick Start
 Run `sudo python3 proxy.py` and `python3 honeypot.py` simultaneously to start up the honeypot. Connections will be possible once the Generator completes its first round of synthetic data point generation.
+
+See the MANUAL.md for further information.
